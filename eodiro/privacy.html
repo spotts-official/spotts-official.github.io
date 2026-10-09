@@ -46,6 +46,15 @@
         이용할 수 있고 광고가 표시될 수 있습니다.
       </li>
       <li>
+        <strong>앱 이용 통계:</strong> 앱 이용 현황을 파악하고 기능을 개선하기 위해
+        Firebase Analytics SDK(Google Analytics for Firebase)를 사용합니다. SDK는 앱
+        인스턴스 ID와 앱 실행·세션·업데이트 등 기본 사용 이벤트, 앱 버전·운영체제·기기
+        정보, 대략적인 지역 정보를 자동으로 수집할 수 있습니다. 대략적인 지역 정보는
+        IP 주소를 수집 시점에 계산한 뒤 폐기해 처리합니다. Firebase Analytics의 광고 ID
+        수집은 비활성화되어 있습니다. 앱은 Analytics로 GPS 좌표, 장소 검색어 또는 이동
+        경로를 전송하지 않습니다.
+      </li>
+      <li>
         <strong>기기에 저장하는 정보:</strong> 이동 방식(도보 또는 자동차)을 저장해
         다음 실행에 사용합니다. 앱은 사용자의 위치와 이동 경로 이력을 기기에
         저장하지 않습니다.
@@ -80,6 +89,14 @@
       Google AdMob은 광고 제공, 성과 측정, 분석 및 부정행위 방지를 위해 위 광고
       정보를 처리할 수 있습니다. Google Mobile Ads SDK가 전송하는 정보는 전송 중
       암호화됩니다. 광고 요청에는 앱이 사용자의 GPS 좌표를 별도로 전달하지 않습니다.
+    </p>
+    <p>
+      Google Analytics for Firebase는 앱 이용 통계를 위해 위 앱 이용 이벤트와 기기·앱
+      정보를 처리합니다. Firebase SDK는 앱 설치마다 앱 인스턴스 ID를 생성해 통계에
+      사용하며, 전송 정보는 암호화됩니다. 자세한 내용은
+      <a href="https://support.google.com/firebase/answer/6318039?hl=ko">Firebase 기본 데이터 수집 안내</a>와
+      <a href="https://support.google.com/analytics/answer/11598602?hl=ko">Analytics 지역 정보 처리 안내</a>를
+      참고해 주세요.
     </p>
     <p>
       카카오와 Google은 각자의 개인정보 처리방침에 따라 정보를 처리할 수 있습니다.
